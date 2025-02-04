@@ -11,19 +11,26 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background: #4b9baba8;
+            height: 90vh;
+            background-image: url("image/ba.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
         }
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-            max-width: 800px;
+            display: grid
+;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 1500px;
+    max-height: 740px;
         }
         .gallery img {
             width: 100%;
+            height: 100%;
+            box-shadow: 3px 5px 5px black;
             cursor: pointer;
             border-radius: 5px;
+
         }
         .lightbox {
             position: fixed;
@@ -37,6 +44,7 @@
             align-items: center;
             display: none;
         }
+      
         .lightbox img {
             max-width: 90%;
             max-height: 80%;
@@ -57,31 +65,29 @@
     </style>
 </head>
 <body>
+    
     <div class="gallery">
-        <img src="image/image_1.jpg" onclick="openLightbox(0)">
-        <img src="image/image_2.jpg" onclick="openLightbox(1)">
-        <img src="image/image_5.jpg" onclick="openLightbox(2)">
+       
+        <img src="image/image_4.jpg" onclick="openLightbox(0)">
+        <img src="image/image_6.jpg" onclick="openLightbox(1)">
+        <img src="image/image_3.jpg" onclick="openLightbox(2)">
         <img src="image/image_4.jpg" onclick="openLightbox(3)">
-        <img src="image/image_9.jpg" onclick="openLightbox(4)">
-        <img src="image/image_4.jpg" onclick="openLightbox(5)">
-        <img src="image/image_6.jpg" onclick="openLightbox(6)">
-        <img src="image/image_3.jpg" onclick="openLightbox(7)">
+        <img src="image/image_6.jpg" onclick="openLightbox(4)">
+        <img src="image/image_7.jpg" onclick="openLightbox(5)">
+        <img src="image/image_4.jpg" onclick="openLightbox(6)">
+        <img src="image/image_10.jpg" onclick="openLightbox(7)">
         <img src="image/image_4.jpg" onclick="openLightbox(8)">
-        <img src="image/image_6.jpg" onclick="openLightbox(9)">
-        <img src="image/image_7.jpg" onclick="openLightbox(10)">
-        <img src="image/image_4.jpg" onclick="openLightbox(11)">
-        <img src="image/image_10.jpg" onclick="openLightbox(12)">
-        <img src="image/image_4.jpg" onclick="openLightbox(13)">
-        <img src="image/image_3.jpg" onclick="openLightbox(14)">
-        <img src="image/image_4.jpg" onclick="openLightbox(15)">
-        <img src="image/image_2.jpg" onclick="openLightbox(16)">
+        <img src="image/image_3.jpg" onclick="openLightbox(9)">
+        <img src="image/image_4.jpg" onclick="openLightbox(10)">
+        <img src="image/image_2.jpg" onclick="openLightbox(11)">
+        <img src="image/image_6.jpg" onclick="openLightbox(12)">
+        <img src="image/image_7.jpg" onclick="openLightbox(13)">
+        <img src="image/image_5.jpg" onclick="openLightbox(14)">
+        <img src="image/image_3.jpg" onclick="openLightbox(15)">
+        <img src="image/image_4.jpg" onclick="openLightbox(16)">
         <img src="image/image_6.jpg" onclick="openLightbox(17)">
-        <img src="image/image_7.jpg" onclick="openLightbox(18)">
-        <img src="image/image_5.jpg" onclick="openLightbox(19)">
-        <img src="image/image_3.jpg" onclick="openLightbox(20)">
-        <img src="image/image_4.jpg" onclick="openLightbox(21)">
-        <img src="image/image_6.jpg" onclick="openLightbox(22)">
-        <img src="image/image_6.jpg" onclick="openLightbox(23)">
+        <img src="image/image_6.jpg" onclick="openLightbox(18)">
+        <img src="image/image_7.jpg" onclick="openLightbox(19)">
     </div>
     
     <div class="lightbox" id="lightbox">
